@@ -1,4 +1,4 @@
-import { gql, useQuery } from "@apollo/client"
+import { gql, useQuery } from '@apollo/client';
 
 const GET_LESSONS_QUERY = gql`
   query {
@@ -7,16 +7,14 @@ const GET_LESSONS_QUERY = gql`
       title
     }
   }
-`
+`;
 
 function App() {
-  const {data} = useQuery(GET_LESSONS_QUERY);
+  const { data } = useQuery(GET_LESSONS_QUERY);
 
-  console.log(data); 
+  console.log(data);
 
-  return (
-   <h1>Hello World</h1>
-  )
+  return <h1>Hello World</h1>;
 }
 
-export default App
+export default App;
